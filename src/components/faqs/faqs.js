@@ -1,70 +1,71 @@
-import { useState, useRef, useEffect } from "react"
-import "./faqs.css"
-import { BallTriangle } from "react-loader-spinner"
-import img1 from "./ArrowCircleUpRight.png"
-import img2 from "./ArrowCircleDownRight (1).svg"
-import img4 from "./email-website-icon-email-png-88334ac4e37df5f11bdfcd467f36ed95 1.svg"
-import axios from "axios"
+import { useState, useRef, useEffect } from "react";
+import "./faqs.css";
+import { BallTriangle } from "react-loader-spinner";
+import img1 from "./ArrowCircleUpRight.png";
+import img2 from "./ArrowCircleDownRight (1).svg";
+import img4 from "./email-website-icon-email-png-88334ac4e37df5f11bdfcd467f36ed95 1.svg";
+import axios from "axios";
+import { apiURL } from "../../apiURL";
 const FAQ = () => {
-  const initialStates = Array(8).fill(false)
-  const [isClickArray, setIsClickArray] = useState(initialStates)
+  const initialStates = Array(8).fill(false);
+  const [isClickArray, setIsClickArray] = useState(initialStates);
 
   const handleClick = (index) => {
-    const newIsClickArray = [...isClickArray]
-    newIsClickArray[index] = !newIsClickArray[index]
-    setIsClickArray(newIsClickArray)
-  }
-  const [isLoading, setIsLoading] = useState(false)
+    const newIsClickArray = [...isClickArray];
+    newIsClickArray[index] = !newIsClickArray[index];
+    setIsClickArray(newIsClickArray);
+  };
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
-  })
+  });
   const handleChange = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
-      setIsLoading(true)
+      setIsLoading(true);
       const response = await axios.post(
-        "https://empylo-app.vercel.app/contact/mailing-list",
+        `${apiURL}/contact/mailing-list`,
         formData
-      )
+      );
 
       if (response?.data?.status === true) {
-        setIsLoading(false)
-        alert(response?.data?.message)
+        setIsLoading(false);
+        alert(response?.data?.message);
       } else {
-        alert("There is error submitting this form please submit again")
+        alert("There is error submitting this form please submit again");
       }
     } catch (error) {
-      setIsLoading(false)
-      alert(error)
+      setIsLoading(false);
+      alert(error);
     }
-  }
+  };
 
-  const sectionRef = useRef(null)
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     const revealcallbk = function (entries) {
-      const [entry] = entries
-      if (!entry.isIntersecting) return
-      entry.target.classList.remove("section-hidden")
-    }
+      const [entry] = entries;
+      if (!entry.isIntersecting) return;
+      entry.target.classList.remove("section-hidden");
+    };
 
     const revealSection = new IntersectionObserver(revealcallbk, {
       root: null,
       threshold: 0.15,
-    })
+    });
 
     if (sectionRef.current) {
-      revealSection.observe(sectionRef.current)
-      sectionRef.current.classList.add("section-hidden")
+      revealSection.observe(sectionRef.current);
+      sectionRef.current.classList.add("section-hidden");
     }
-  }, [])
+  }, []);
 
   return (
     <>
@@ -346,7 +347,7 @@ const FAQ = () => {
         </form>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default FAQ
+export default FAQ;
