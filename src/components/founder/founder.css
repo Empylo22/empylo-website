@@ -1,0 +1,109 @@
+.founder{
+    background: linear-gradient(180deg, 
+    rgba(221, 240, 238, 0.00) 0%, #DDF0EE 9.5%, 
+    #DDF0EE 89%, rgba(221, 240, 238, 0.00) 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 10rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: "Inter", sans-serif;
+    color: #000;
+    transition: all 2s;
+    @media(max-width: 769px){
+        padding: 2rem 3rem;
+        }
+}
+.founder-header {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    @media(max-width: 769px){
+        font-size: 2.4rem;
+        }
+}
+.founder-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    @media(max-width: 769px){
+        flex-direction: column;
+        }
+}
+.founder-2-img {
+    max-width: 40%;
+    z-index: 150;
+    @media(max-width: 769px){
+        max-width: 100%;
+        margin-bottom: 2rem;
+        z-index: 100;
+        
+    }
+}
+.founder-2-div {
+    width: 50%;
+    z-index: 200;
+    @media(max-width: 769px){
+        width: 100%;
+    }
+}
+.founder-2-text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    @media(max-width: 769px){
+        font-size: 1.6rem;
+        }
+}
+.founder-imgs {
+    margin: 4rem 0 8rem 0;
+    @media(max-width: 769px){
+        align-self: center;
+        }
+}
+.founder-d-img {
+    margin-right: 3rem;
+}
+.founder-btn {
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    background: var(--Empylo-turquoise, #00A99D);
+    box-shadow: 2px 2px 4px 0px rgba(138, 136, 136, 0.30), 2px -2px 4px 0px #03A095 inset;
+    margin-left: -9rem;
+    border: none;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    @media(max-width: 769px){
+        display: none;
+        }
+}
+.founder-btn2 {
+    display: none;
+    @media(max-width: 769px){
+        padding: 1rem 3rem;
+        border-radius: 10px;
+        background: var(--Empylo-turquoise, #00A99D);
+        box-shadow: 2px 2px 4px 0px rgba(138, 136, 136, 0.30), 2px -2px 4px 0px #03A095 inset;
+        border: none;
+        display: block;
+        margin: -4rem 0 1rem 0;
+        z-index: 200;
+        text-decoration: none;
+        color: #000;
+        }
+
+}
+.founder-img {
+    margin-top: -4rem;
+    z-index: 100;
+    display: block;
+    @media(max-width: 769px){
+        display: none;
+        }
+}
+.section-hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+}

@@ -1,0 +1,130 @@
+.wwa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+    background-color: #DDF0EE;
+    width: 100%;
+    transition: all 2s;
+    font-family: 'Switzer Variable', sans-serif;
+    @media(max-width: 769px){
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+.wwa-1 {
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 769px){
+        align-items: center;
+    }
+}
+.wwa-1-img {
+    @media(max-width: 769px){
+        display: none;
+    }
+}
+.wwa-1-left {
+    padding: 0 8rem;
+    @media(max-width: 769px){
+        padding: 0;
+    }
+}
+.wwa-1-header {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.112rem;
+    color:#FFB347;
+    
+    @media(max-width: 769px){
+        text-align: center;
+    }
+}
+.wwa-1-text {
+    font-size: 3.2rem;
+    line-height: 3.873rem;
+    font-weight: 500;
+    font-family: 'Inter', serif;
+    margin: .7rem 0;
+    width: 80%;
+    @media(max-width: 769px){
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.42rem;
+    }
+}
+.wwa-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7rem;
+    @media(max-width: 769px){
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+    }
+}
+.wwa-1-1 {
+    margin: -5rem 0 0 3rem;
+    width: 112px;
+    height: 112px;
+    z-index: 100;
+    @media(max-width: 769px){
+        display: none;
+    }
+}
+.wwa-1-1-mobile{
+    display: none;
+    @media(max-width: 769px){
+       display: flex;
+       align-self: flex-end;
+       padding-top: -2rem;
+       width: 7.633rem;
+       height: 7.8rem;
+    }
+}
+.wwa-1-2 {
+    z-index: 200;
+    @media(max-width: 769px){
+        width: 26.1rem;
+        height:29.666rem;
+        margin-bottom: 2rem;
+    }
+
+}
+.wwa-1-3-text {
+    font-size: 1.8rem;
+    line-height: 2.376rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    color: #191919;
+    @media(max-width: 769px){
+        font-size: 1.6rem;
+        line-height: 2.112rem;
+    }
+}
+.wwa-1-3 {
+    margin-left: 2rem;
+    @media(max-width: 769px){
+       margin-left: 0;
+    }
+}
+.wwa-1-3-btn {
+    font-size: 1.6rem;
+    line-height: 2.112rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.wwa-1-1-span {
+    color:#FFB347;
+}
+.wwa-1-4 {
+    @media(max-width: 769px){
+        display: none;
+    }
+}
+.section-hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+}
