@@ -24,7 +24,7 @@ const Service2 = ()=>{
     return(
         <div className="service2" ref={sectionRef}>
             <div className='service1-2'>
-                <h1 className='service-header'>Data Analytics</h1>
+                <h1 className='service-header'>Data Insights And Artificial Intelligence (AI)</h1>
                 <p className='service-text2'>
                 Enabling users to seamlessly identify personal and group health outcomes and insights, helping people to achieve positive personal and organisation health outcomes.
                 </p>
