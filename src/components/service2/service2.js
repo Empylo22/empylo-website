@@ -26,9 +26,7 @@ const Service2 = ()=>{
             <div className='service1-2'>
                 <h1 className='service-header'>Data Analytics</h1>
                 <p className='service-text2'>
-                We have leveraged advanced analytics and AI to enable users to seamlessly identify personal 
-                and group health outcomes and fast and accurate data insights, helping people to support 
-                themselves and others, and to drive positive personal and organisation health outcomes.
+                Enabling users to seamlessly identify personal and group health outcomes and insights, helping people to achieve positive personal and organisation health outcomes.
                 </p>
             </div>
 
