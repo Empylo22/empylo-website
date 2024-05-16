@@ -40,27 +40,21 @@ const Offer = ()=>{
                 <div className='offer-div-1'>
                 <img src={img1} alt='img' className='offer-img-m'/>
                     <h1 className='offer-div-header'>Peer Support</h1>
-                    <p className='offer-div-text'>We have built a data-powered digital peer support tool to combat loneliness and improve mental and physical health. We enable people to create and nurture 'Circles' with friends, family, and colleagues to build health-focused connections, and reduce loneliness 
-                    and social isolation and the associated mental and physical health risks.
+                    <p className='offer-div-text'>Enabling people to create and nurture 'Circles' with friends, family, and colleagues to build health-focused connections and reduce loneliness and it’s risks.
                     </p>
                 </div>
                 <div className='offer-div-1'>
                 <img src={img2} alt='img' className='offer-img-m'/>
                     <h1 className='offer-div-header'>Data Insights and Artificial Intelligence (AI)</h1>
                     <p className='offer-div-text'>
-                    We have leveraged advanced analytics and AI to enable users to seamlessly 
-                    identify personal and group health outcomes and fast and accurate data insights, helping people to support 
-                    themselves and others, and to drive positive personal and organisation health outcomes.
+                    Enabling users to seamlessly identify personal and group health outcomes and insights, helping people to achieve positive personal and organisation health outcomes.
                     </p>
                 </div>
                 <div className='offer-div-1'>
                 <img src={img3} alt='img' className='offer-img-m'/>
                     <h1 className='offer-div-header s1'>Training and Consultancy</h1>
                     <p className='offer-div-text'>
-                    Our expert health consultants offer concierge consulting services using our Circles Health 
-                    App Client solution to inform, advise and support partner organisations. Our consultants 
-                    will work closely with organisations to help them to identify and achieve their objectives. 
-                    We provide expert analysis in-house multifactorial health screening, advice and education, and signposting to relevant support. 
+                    Our experts provide analysis, in-house multifactorial health screening, advice and education, and signpost to relevant support. 
                     </p>
                 </div>
             </div>
